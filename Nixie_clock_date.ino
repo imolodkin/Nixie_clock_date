@@ -105,7 +105,7 @@ void setup() {
   secs = now.second();
   mins = now.minute();
   hrs = now.hour();
-  rtc.adjust(DateTime(now.year(), now.month(), now.day(), now.hour(), now.minute(), now.second())); //установка даты в память
+  rtc.adjust(DateTime(2019, 4, 17, now.hour(), now.minute(), now.second())); //установка даты в память
 
   pinMode(DECODER0, OUTPUT);
   pinMode(DECODER1, OUTPUT);
@@ -285,7 +285,7 @@ void buttonsTick() {
     secs = 0;
     EEPROM.updateByte(0, alm_hrs);
     EEPROM.updateByte(1, alm_mins);
-    rtc.adjust(DateTime(2014, 1, 21, hrs, mins, 0));
+    rtc.adjust(DateTime(now.year(), now.month(), now.day(), now.hour(), now.minute(), now.second()));
 
     changeBright();
     modeTimer.setInterval((long)CLOCK_TIME * 1000);
