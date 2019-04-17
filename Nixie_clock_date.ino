@@ -1,11 +1,5 @@
 /*
-  Скетч к проекту "Часы на ГРИ"
-  Страница проекта (схемы, описания): https://alexgyver.ru/nixieclock/
-  Исходники на GitHub: https://github.com/AlexGyver/nixieclock/
-  Нравится, как написан код? Поддержи автора! https://alexgyver.ru/support_alex/
-  Автор: AlexGyver Technologies, 2018
-  https://AlexGyver.ru/
-  1.2 - добавлена настройка "реверс индикаторов" для платы на ИН-12
+  Скетч к проекту "Часы на ГРИ" с режимом даты
 */
 /*
   SET
@@ -105,7 +99,7 @@ void setup() {
   secs = now.second();
   mins = now.minute();
   hrs = now.hour();
-  rtc.adjust(DateTime(2019, 4, 17, now.hour(), now.minute(), now.second()));
+  rtc.adjust(DateTime(2019, 4, 17, now.hour(), now.minute(), now.second())); //установка даты в память
 
   pinMode(DECODER0, OUTPUT);
   pinMode(DECODER1, OUTPUT);
