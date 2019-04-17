@@ -314,6 +314,10 @@ void modeTick() {
       modeTimer.setInterval((long)TEMP_TIME * 1000);
     } else if (mode == 5) {
       for (byte i = 1; i < 7; i++) digitsDraw[i] = 10;
+      DateTime now = rtc.now();
+      secs = now.second();
+      mins = now.minute();
+      hrs = now.hour();
       mode = 0;
       modeTimer.setInterval((long)CLOCK_TIME * 1000);
     } else if (mode == 0) {
