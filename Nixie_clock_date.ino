@@ -105,7 +105,7 @@ void setup() {
   secs = now.second();
   mins = now.minute();
   hrs = now.hour();
-  rtc.adjust(DateTime(2019, 4, 17, now.hour(), now.minute(), now.second())); //установка даты в память
+  rtc.adjust(DateTime(now.year(), now.month(), now.day(), now.hour(), now.minute(), now.second())); //установка даты в память
 
   pinMode(DECODER0, OUTPUT);
   pinMode(DECODER1, OUTPUT);
