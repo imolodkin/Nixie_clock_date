@@ -1,5 +1,11 @@
 /*
   Скетч к проекту "Часы на ГРИ" с режимом даты
+  Страница проекта (схемы, описания): https://alexgyver.ru/nixieclock/
+  Исходники на GitHub: https://github.com/AlexGyver/nixieclock/
+  Нравится, как написан код? Поддержи автора! https://alexgyver.ru/support_alex/
+  Автор: AlexGyver Technologies, 2018
+  https://AlexGyver.ru/
+  1.2 - добавлена настройка "реверс индикаторов" для платы на ИН-12
 */
 /*
   SET
