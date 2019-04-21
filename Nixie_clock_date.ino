@@ -285,6 +285,7 @@ void buttonsTick() {
     secs = 0;
     EEPROM.updateByte(0, alm_hrs);
     EEPROM.updateByte(1, alm_mins);
+    DateTime now = rtc.now();
     rtc.adjust(DateTime(now.year(), now.month(), now.day(), hrs, mins, 0));
 
     changeBright();
